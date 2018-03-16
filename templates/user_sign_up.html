@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Familist Login in</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
+</head>
+
+<body>
+
+
+<section class="decor">
+		<div class="cube">
+			<header class="logintext">Signup</header>
+		</div>
+	</section>
+
+	<section class="main">
+		<form action="{{ url_for('signup_user') }}" method="POST">
+			<fieldset class="fields">
+				<input class="field margin10b" id="userName" name="userName" placeholder="Username">
+			</fieldset>
+			<fieldset class="fields">
+				<input class="field margin10b" type="password" id="password" name="password" placeholder="Enter your password">
+			</fieldset>
+
+			<button class="send-btn btn">Sign up</button>
+		</form>
+
+		<section class="social">
+			<div class="heading"><span>Final step before we start!</span></div>
+		</section>
+	</section>
+</body>
+</html>
